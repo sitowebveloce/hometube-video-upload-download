@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #333;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+
+/* HEADER  */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    background-color: rgb(88, 88, 88);
+}
+
+header h1 {
+    color: rgb(231, 231, 231);
+    padding: 8px;
+    margin-left: 20px;
+    transition: .4s;
+}
+
+header h1 span.tube {
+    color: #FA1300;
+}
+
+header h1:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 13px rgba(255, 255, 255, .8);
+}
+
+@media (max-width: 768px) {
+    header {
+        align-items: center;
+    }
+    header h1 {
+        color: #FA1300 !important;
+        margin: auto;
+    }
+}
+
+.messages {
+    color: #FA1300;
+    font-size: 1.3rem;
+    text-align: center;
+    align-items: center;
+}
+
+
+/* CONTAINER  */
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    height: calc(100vh-100px);
+    margin: 100px auto;
+}
+
+.container form {
+    margin: 10px;
+}
+
+
+/* UPLOAD INPUT  */
+
+input,
+button,
+ ::-webkit-file-upload-button {
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, .4);
+    outline: none;
+    border: none;
+    padding: 6px;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    transition: .4s;
+}
+
+ ::-webkit-file-upload-button {
+    margin-right: 10px;
+    text-transform: uppercase;
+    transition: .6s;
+    box-shadow: none;
+}
+
+ ::-webkit-file-upload-button:hover,
+button:hover {
+    color: #333;
+    background-color: #fff;
+}
+
+form {
+    position: relative;
+    width: 55%;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    form {
+        width: 88%;
+    }
+}
+
+input[type='file'] {
+    width: 100%;
+}
+
+button.btn-submit {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+    transition: .5s;
+    box-shadow: none;
+}
+
+
+/* VIDEOS  */
+
+.videos,
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: capitalize;
+    margin-top: 10px;
+}
+
+video {
+    margin: 20px auto;
+}
+
+@media (max-width: 768px) {
+    video {
+        width: 80%;
+    }
+}
