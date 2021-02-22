@@ -22,7 +22,7 @@ When ready run this cmd to start the backend listener.
 Open a browser and go to 
 > http://localhost:3001
 
-* [Video tutorial]()
+* [Video tutorial](https://youtu.be/fbEw7d08RqY)
 
 #### License MIT
 ##### Author @lex gd ❤️
